@@ -160,7 +160,7 @@ Importer les fichiers SQL `createSchema.sql` et `import-postgresql.sql` :
 ```bash
 cd /opt/tmp
 tar xjvf linshare-core-*-sql.tar.bz2
-psql -U linshare -W -d linshare linshare-core-sql/postgresql/createSchema.sql
+psql -U linshare -W -d linshare -f linshare-core-sql/postgresql/createSchema.sql
 Password for user linshare: PASSWORD
 psql -U linshare -W -d linshare -f linshare-core-sql/postgresql/import-postgresql.sql
 Password for user linshare: PASSWORD
